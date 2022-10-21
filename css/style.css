@@ -1,0 +1,90 @@
+/*Général*/
+
+html{
+    background-color: rgba(217, 212, 206, 0.923)
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    display: flex;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    color: red;
+}
+
+h3{
+    font-family: 'Russo One', sans-serif;
+    color: red;
+}
+p{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+a{
+    font-family: 'Russo One', sans-serif;
+    color: black;
+}
+
+li{
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 2vh;
+}
+
+/*Id*/
+
+/*Class*/
+
+.top{
+    background-image: url(../img/r.o.b_icon.jpg);
+    min-height: 15vh;
+}
+
+.Press_Start_2P{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.black{
+    color: black;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+/*Ici on applique une modification si l'ecran est plus petit que 1024 px(ici pour ordi est tablette)*/
+@media screen and (max-width:1024px) {
+    
+}
+
+/*pour le tel*/
+@media all and (max-device-width:480px){
+
+}
