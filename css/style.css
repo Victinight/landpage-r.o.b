@@ -1,16 +1,22 @@
 /*Général*/
 
+*{
+    margin-top: 0px;
+}
+
 html{
-    background-color: rgba(217, 212, 206, 0.923)
+    background-color: rgba(217, 212, 206, 0.923);
+}
+
+body{
+    margin: 0px;
 }
 
 nav{
+    margin-top: 120px;
     display: flex;
     justify-content: space-around;
-}
-
-main{
-    display: flex;
+    font-size: 35px;
 }
 
 footer{
@@ -19,8 +25,8 @@ footer{
 }
 
 div{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -33,6 +39,7 @@ h1{
 h3{
     font-family: 'Russo One', sans-serif;
     color: red;
+    font-size: 24px;
 }
 p{
     font-family: 'Press Start 2P', sans-serif;
@@ -48,13 +55,14 @@ li{
     margin: 2vh;
 }
 
+
 /*Id*/
 
 /*Class*/
 
 .top{
-    background-image: url(../img/r.o.b_icon.jpg);
-    min-height: 15vh;
+    background-image: url(../img/r.o.b_baniere1.jpg);
+    min-height: 21vh
 }
 
 .Press_Start_2P{
@@ -68,7 +76,12 @@ li{
 .one{
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+}
+
+main div .image{
+    display: flex;
+    align-items: right;
+    max-width: -2vh;
 }
 
 .second{
@@ -76,15 +89,44 @@ li{
     justify-content: center;
     flex-direction: column;
     margin-left: 10px;
+    margin-bottom: 50px;
 
 }
 
-/*Ici on applique une modification si l'ecran est plus petit que 1024 px(ici pour ordi est tablette)*/
-@media screen and (max-width:1024px) {
-    
+.mail{
+    margin-bottom: 2vh;
+    font-size: 20px;
 }
 
-/*pour le tel*/
-@media all and (max-device-width:480px){
-
+.resaux li{
+    font-size: 20px;
 }
+
+main div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Ici on applique une modification si l'ecran est plus petit que 460px(ici ref d'un tel)*/
+
+@media screen and (max-width:460px) {
+
+    .top{
+        min-width: 730px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one{
+        margin-top: -5vh;
+    }
+}
+
